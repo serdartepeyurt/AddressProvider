@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AddressProvider.Models
+namespace AddressProviderFramework.Models
 {
     public class City
     {

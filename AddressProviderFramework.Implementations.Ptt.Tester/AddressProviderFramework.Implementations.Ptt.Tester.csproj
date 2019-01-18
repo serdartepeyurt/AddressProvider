@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AddressProvider.Ptt\AddressProvider.Ptt.csproj" />
+    <ProjectReference Include="..\AddressProviderFramework.Implementations.Ptt\AddressProviderFramework.Implementations.Ptt.csproj" />
   </ItemGroup>
 
   <ItemGroup>

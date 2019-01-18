@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace AddressProvider.Ptt.Tester
+namespace AddressProviderFramework.Implementations.Ptt.Tester
 {
     class Program
     {

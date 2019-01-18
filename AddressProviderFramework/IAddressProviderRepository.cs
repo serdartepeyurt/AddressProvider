@@ -1,6 +1,6 @@
-﻿namespace AddressProvider
+﻿namespace AddressProviderFramework
 {
-    using AddressProvider.Models;
+    using AddressProviderFramework.Models;
     using System.Collections.Generic;
 
     public interface IAddressProviderRepository

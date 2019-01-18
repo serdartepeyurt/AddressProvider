@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider", "AddressProvider\AddressProvider.csproj", "{8192E3A0-35D8-4D29-8335-7326055D971C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProviderFramework", "AddressProviderFramework\AddressProviderFramework.csproj", "{8192E3A0-35D8-4D29-8335-7326055D971C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider.Ptt", "AddressProvider.Ptt\AddressProvider.Ptt.csproj", "{B9A68566-DAC4-4EF6-947A-A960E18FB135}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProviderFramework.Implementations.Ptt", "AddressProviderFramework.Implementations.Ptt\AddressProviderFramework.Implementations.Ptt.csproj", "{B9A68566-DAC4-4EF6-947A-A960E18FB135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider.Ptt.Tester", "AddressProvider.Ptt.Tester\AddressProvider.Ptt.Tester.csproj", "{495692E5-D60A-4993-A888-931CAE76ABC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProviderFramework.Implementations.Ptt.Tester", "AddressProviderFramework.Implementations.Ptt.Tester\AddressProviderFramework.Implementations.Ptt.Tester.csproj", "{495692E5-D60A-4993-A888-931CAE76ABC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

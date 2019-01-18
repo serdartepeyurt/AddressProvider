@@ -1,4 +1,4 @@
-﻿namespace AddressProvider.Models
+﻿namespace AddressProviderFramework.Models
 {
     public class Neighborhood
     {

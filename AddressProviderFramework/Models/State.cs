@@ -1,4 +1,4 @@
-﻿namespace AddressProvider.Models
+﻿namespace AddressProviderFramework.Models
 {
     using System.Collections.Generic;
     using System.Linq;

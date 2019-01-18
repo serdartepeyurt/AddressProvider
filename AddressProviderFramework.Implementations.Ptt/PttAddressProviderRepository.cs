@@ -1,9 +1,9 @@
-﻿namespace AddressProvider.Ptt
+﻿namespace AddressProviderFramework.Implementations.Ptt
 {
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using AddressProvider.Models;
+    using AddressProviderFramework.Models;
     using ExcelDataReader;
 
     public class PttAddressProviderRepository : IAddressProviderRepository

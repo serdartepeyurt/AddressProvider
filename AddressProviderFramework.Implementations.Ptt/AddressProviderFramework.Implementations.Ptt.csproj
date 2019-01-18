@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AddressProvider\AddressProvider.csproj" />
+    <ProjectReference Include="..\AddressProviderFramework\AddressProviderFramework.csproj" />
   </ItemGroup>
 
 </Project>
