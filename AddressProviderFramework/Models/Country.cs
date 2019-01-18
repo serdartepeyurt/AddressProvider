@@ -27,7 +27,7 @@
 
         public State GetState(string stateName)
         {
-            return this.States.SingleOrDefault(s => s.Name == stateName);
+            return this.States.SingleOrDefault(s => s.Name.ToUpperInvariant() == stateName.ToUpperInvariant());
         }
 
         public IEnumerable<State> GetStates()

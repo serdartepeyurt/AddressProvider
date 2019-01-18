@@ -29,7 +29,7 @@
 
         public Neighborhood GetNeighborhood(string neighborhoodStr)
         {
-            return this.Neighborhoods.SingleOrDefault(s => s.Name == neighborhoodStr);
+            return this.Neighborhoods.SingleOrDefault(s => s.Name.ToUpperInvariant() == neighborhoodStr.ToUpperInvariant());
         }
 
         public IEnumerable<Neighborhood> GetNeighborhoods()

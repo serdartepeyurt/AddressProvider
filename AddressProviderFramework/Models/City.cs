@@ -28,7 +28,7 @@ namespace AddressProviderFramework.Models
 
         public District GetDistrict(string districtName)
         {
-            return this.Districts.SingleOrDefault(s => s.Name == districtName);
+            return this.Districts.SingleOrDefault(s => s.Name.ToUpperInvariant() == districtName.ToUpperInvariant());
         }
 
         public IEnumerable<District> GetDistricts()

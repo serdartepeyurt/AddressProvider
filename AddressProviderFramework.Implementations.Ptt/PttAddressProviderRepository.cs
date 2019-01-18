@@ -56,32 +56,32 @@
 
         public IEnumerable<State> GetStates(string country)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetStates() ?? new List<State>();
+            return this.DefaultCountry.GetStates() ?? new List<State>();
         }
 
         public IEnumerable<City> GetCities(string country, string state)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetState(state)?.GetCities() ?? new List<City>();
+            return this.DefaultCountry.GetState(state)?.GetCities() ?? new List<City>();
         }
 
         public IEnumerable<District> GetDistricts(string country, string state)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetState(state)?.GetCities().SelectMany(c => c.GetDistricts()) ?? new List<District>();
+            return this.DefaultCountry.GetState(state)?.GetCities().SelectMany(c => c.GetDistricts()) ?? new List<District>();
         }
 
         public IEnumerable<District> GetDistricts(string country, string state, string city)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetState(state)?.GetCity(city)?.GetDistricts() ?? new List<District>();
+            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistricts() ?? new List<District>();
         }
 
         public IEnumerable<Neighborhood> GetNeighborhoods(string country, string state, string city)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetState(state)?.GetCity(city)?.GetDistricts().SelectMany(d => d.GetNeighborhoods()) ?? new List<Neighborhood>();
+            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistricts().SelectMany(d => d.GetNeighborhoods()) ?? new List<Neighborhood>();
         }
 
         public IEnumerable<Neighborhood> GetNeighborhoods(string country, string state, string city, string district)
         {
-            return this.Countries.FirstOrDefault(c => c.Name == country)?.GetState(state)?.GetCity(city)?.GetDistrict(district).GetNeighborhoods() ?? new List<Neighborhood>();
+            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistrict(district).GetNeighborhoods() ?? new List<Neighborhood>();
         }
 
         private void HandleRow(string stateStr, string cityStr, string districtStr, string neighborhoodStr, string postalCodeStr)

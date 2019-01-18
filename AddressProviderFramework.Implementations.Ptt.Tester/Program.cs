@@ -22,13 +22,7 @@ namespace AddressProviderFramework.Implementations.Ptt.Tester
                 Console.WriteLine(state);
             }
 
-            var sc = new ServiceCollection();
-            sc.AddSingleton<IAddressProviderRepository, PttAddressProviderRepository>(serviceProvider =>
-            {
-                var rep = new PttAddressProviderRepository();
-                repo.Initialize("");
-                return rep;
-            });
+            var s = country.GetState("İstanbul");
 
             Console.ReadLine();
         }

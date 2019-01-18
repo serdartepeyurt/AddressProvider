@@ -28,7 +28,7 @@
 
         public City GetCity(string cityName)
         {
-            return this.Cities.SingleOrDefault(s => s.Name == cityName);
+            return this.Cities.SingleOrDefault(s => s.Name.ToUpperInvariant() == cityName.ToUpperInvariant());
         }
 
         public IEnumerable<City> GetCities()
