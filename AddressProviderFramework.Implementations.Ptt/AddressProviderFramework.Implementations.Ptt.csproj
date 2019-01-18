@@ -1,16 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/serdartepeyurt/AddressProviderFramework</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/serdartepeyurt/AddressProviderFramework/blob/master/LICENSE.md</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/serdartepeyurt/AddressProviderFramework</RepositoryUrl>
+    <Description>PTT(Turkish Post) implementation for AddressProviderFramework, uses xslx file to populate data. You can get the xlsx file from http://postakodu.ptt.gov.tr/Dosyalar/pk_list.zip</Description>
+    <Version>1.0.0</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Serdar Tepeyurt</Copyright>
+    <Authors>Serdar Tepeyurt</Authors>
+    <Company>Serdar Tepeyurt</Company>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AddressProviderFramework" Version="1.0.1" />
     <PackageReference Include="ExcelDataReader" Version="3.4.2" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AddressProviderFramework\AddressProviderFramework.csproj" />
   </ItemGroup>
 
 </Project>

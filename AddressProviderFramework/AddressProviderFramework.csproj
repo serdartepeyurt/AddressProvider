@@ -1,8 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/serdartepeyurt/AddressProviderFramework</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/serdartepeyurt/AddressProviderFramework/blob/master/LICENSE.md</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/serdartepeyurt/AddressProviderFramework</RepositoryUrl>
+    <Description>Simple address provider framework</Description>
+    <Version>1.0.1</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Serdar Tepeyurt</Copyright>
+    <Authors>Serdar Tepeyurt</Authors>
+    <Company>Serdar Tepeyurt</Company>
   </PropertyGroup>
 
 </Project>
