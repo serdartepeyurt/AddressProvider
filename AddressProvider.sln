@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider", "AddressProvider\AddressProvider.csproj", "{8192E3A0-35D8-4D29-8335-7326055D971C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider.Ptt", "AddressProvider.Ptt\AddressProvider.Ptt.csproj", "{B9A68566-DAC4-4EF6-947A-A960E18FB135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressProvider.Ptt.Tester", "AddressProvider.Ptt.Tester\AddressProvider.Ptt.Tester.csproj", "{495692E5-D60A-4993-A888-931CAE76ABC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8192E3A0-35D8-4D29-8335-7326055D971C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8192E3A0-35D8-4D29-8335-7326055D971C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8192E3A0-35D8-4D29-8335-7326055D971C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A68566-DAC4-4EF6-947A-A960E18FB135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A68566-DAC4-4EF6-947A-A960E18FB135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A68566-DAC4-4EF6-947A-A960E18FB135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A68566-DAC4-4EF6-947A-A960E18FB135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495692E5-D60A-4993-A888-931CAE76ABC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495692E5-D60A-4993-A888-931CAE76ABC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495692E5-D60A-4993-A888-931CAE76ABC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495692E5-D60A-4993-A888-931CAE76ABC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
