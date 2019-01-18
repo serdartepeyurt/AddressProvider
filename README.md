@@ -1,5 +1,5 @@
 # AddressProviderFramework
-Simple address provider framework and PTT(Turkish Post) implementation written on NetCore 2.2. 
+Simple address provider framework and PTT(Turkish Post) implementation written on NetCore 2.2. When implemented it turns into a basic one-way in-memory database for addresses.
 
 You can easily add your own implementations, and you can share them with me so I can display here!
 
