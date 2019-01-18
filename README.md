@@ -32,6 +32,20 @@ The PTT(Turkish Post) implementation for AddressProviderFramework, uses xslx fil
 
 Because it uses a file to populate data, you don't need any other data source. It loads data on `Initialize()` method, by given data file. If you are leveraging DI, it should be added to the services layer as a singleton service.
 
+```C#
+// Use this method to add services to the container.
+public void ConfigureServices(IServiceCollection services)
+{
+    ...
+    services.AddSingleton<IAddressProviderRepository, PttAddressProviderRepository>(serviceProvider =>
+        {
+            var repo = new PttAddressProviderRepository();
+            repo.Initialize(filePath);
+            return repo;
+        });
+}
+```
+
 
 ## How to implement new providers
 
