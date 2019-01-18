@@ -4,9 +4,9 @@ Simple address provider framework and PTT(Turkish Post) implementation written o
 You can easily add your own implementations, and you can share them with me so I can display here!
 
 ## NuGet Packages 
-AddressProviderFramework https://www.nuget.org/packages/AddressProviderFramework/1.0.1
+AddressProviderFramework https://www.nuget.org/packages/AddressProviderFramework
 
-PTT(Turkish Post) Implementation https://www.nuget.org/packages/AddressProviderFramework.Implementations.Ptt/1.0.1
+PTT(Turkish Post) Implementation https://www.nuget.org/packages/AddressProviderFramework.Implementations.Ptt
 
 ## Usage example
 
