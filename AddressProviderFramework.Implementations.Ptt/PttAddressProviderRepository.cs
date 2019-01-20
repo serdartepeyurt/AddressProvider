@@ -49,39 +49,61 @@
             }
         }
 
+        /// <inheritdoc/>
         public IEnumerable<Country> GetCountries()
         {
             return this.Countries;
         }
 
+        /// <inheritdoc/>
         public IEnumerable<State> GetStates(string country)
         {
-            return this.DefaultCountry.GetStates() ?? new List<State>();
+            return this.DefaultCountry.GetStates();
         }
 
+        /// <inheritdoc/>
         public IEnumerable<City> GetCities(string country, string state)
         {
             return this.DefaultCountry.GetState(state)?.GetCities() ?? new List<City>();
         }
 
-        public IEnumerable<District> GetDistricts(string country, string state)
+        /// <inheritdoc/>
+        public IEnumerable<District> GetDistricts(string country, string state, string city = null)
         {
-            return this.DefaultCountry.GetState(state)?.GetCities().SelectMany(c => c.GetDistricts()) ?? new List<District>();
+            var stateObj = this.DefaultCountry.GetState(state);
+
+            if(stateObj == null)
+            {
+                return new List<District>();
+            }
+
+            if (string.IsNullOrEmpty(city))
+            {
+                return stateObj.GetCities().SelectMany(c => c.GetDistricts());
+            }
+            else
+            {
+                return stateObj.GetCity(city)?.GetDistricts() ?? new List<District>();
+            }
         }
 
-        public IEnumerable<District> GetDistricts(string country, string state, string city)
+        public IEnumerable<Neighborhood> GetNeighborhoods(string country, string state, string city, string district = null)
         {
-            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistricts() ?? new List<District>();
-        }
+            var c = this.DefaultCountry.GetState(state)?.GetCity(city);
 
-        public IEnumerable<Neighborhood> GetNeighborhoods(string country, string state, string city)
-        {
-            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistricts().SelectMany(d => d.GetNeighborhoods()) ?? new List<Neighborhood>();
-        }
+            if(c == null)
+            {
+                return new List<Neighborhood>();
+            }
 
-        public IEnumerable<Neighborhood> GetNeighborhoods(string country, string state, string city, string district)
-        {
-            return this.DefaultCountry.GetState(state)?.GetCity(city)?.GetDistrict(district).GetNeighborhoods() ?? new List<Neighborhood>();
+            if(!string.IsNullOrEmpty(district))
+            {
+                return c.GetDistrict(district)?.GetNeighborhoods() ?? new List<Neighborhood>();
+            }
+            else
+            {
+                return c.GetDistricts().SelectMany(d => d.GetNeighborhoods());
+            }
         }
 
         private void HandleRow(string stateStr, string cityStr, string districtStr, string neighborhoodStr, string postalCodeStr)
